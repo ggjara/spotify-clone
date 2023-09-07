@@ -66,7 +66,7 @@ const Header = ({
           items-center
         ">
           <button
-            onClick={() => router.back}
+            onClick={() => router.back()}
             className="
             rounded-full
             bg-black
@@ -94,6 +94,7 @@ const Header = ({
         </div>
         <div className="flex md:hidden gap-x-2 items-center">
           <button
+            onClick={() => router.push("/")}
             className="
               rounded-full
               p-2
@@ -107,6 +108,7 @@ const Header = ({
             <HiHome className="text-black" size={20} />
           </button>
           <button
+            onClick={() => router.push("/search")}
             className="
               rounded-full
               p-2
